@@ -1,0 +1,91 @@
+﻿body {
+	margin-top: 40px;
+	text-align: center;
+	font-size: 14px;
+	font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+}
+		
+#wrap {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+		
+#external-events {
+	float: left;
+	width: 15%;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+	background: #eee;
+	text-align: left;
+}
+		
+#external-events h4 {
+	font-size: 16px;
+	margin-top: 0;
+	padding-top: 1em;
+}
+		
+#external-events .fc-event {
+	margin: 10px 0;
+	cursor: pointer;
+	background-color: #257e4a;
+	border-color: #257e4a;
+}
+		
+#external-events p {
+	margin: 1.5em 0;
+	font-size: 11px;
+	color: #666;
+}
+		
+#external-events p input {
+	margin: 0;
+	vertical-align: middle;
+}
+
+#calendar {
+	float: right;
+	width: 80%;
+}
+
+#editDialog { 
+	display: none; 
+	font-size: 12px;
+	text-align: left;
+}
+
+/* override jquery ui overlay style */
+.ui-widget-overlay {
+   background-image: none !important; /* FF fix */
+}
+
+.fc-basic-view .fc-content-skeleton td.fc-day-number {
+	background-color: #eee;
+	border-width: 1px;
+	border-color: #ddd;
+}
+
+.plus-symbol {
+	float: left;
+	padding-left: 10px;
+	display: none;
+}
+
+.minus-symbol {
+	float: left;
+	padding-left: 5px;
+	display: none;
+}
+
+.plus-symbol:hover {
+	cursor: pointer;
+}
+
+.minus-symbol:hover {
+   cursor: pointer;
+}
+
+.fc-basic-view .fc-body .fc-row {
+   min-height: 125px;
+}
