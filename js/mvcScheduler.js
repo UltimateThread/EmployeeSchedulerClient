@@ -101,6 +101,21 @@ $(document).ready(function () {
                orderId: id,
                type: 'event'
             };
+            
+            // Log the start time that should be entered into the database
+            if(editHour < 10) {
+              var hour = '0' + editHour;
+            }
+            else {
+              var hour = editHour;
+            }
+            if(editMinute < 10) {
+              var minute = '0' + editMinute;
+            }
+            else {
+              var minute = editMinute;
+            }
+            console.log(editDate.format('YYYY') + '-' + editDate.format('MM') + '-' + editDate.format('DD') + 'T' + hour + ':' + minute + ':00');
          }
             // WorkAround for Creating Event from Plus Sign Click Since we Can't Get the Date Object in the Event
             // TODO: Determine if there is a Way to Get the Date Object from the Event Fired by the Plus Sign Click
@@ -158,6 +173,14 @@ $(document).ready(function () {
          right: 'prev,next today'
       },
       editable: true,
+      events: [
+				{
+					title: 'Testing Database',
+					start: '2016-06-06T20:35:00',
+          orderId: '1',
+          type: 'event'
+				}
+			],
       droppable: true, // this allows things to be dropped onto the calendar
       eventOrder: 'orderId, start', // Set the events to order by the orderId
 
