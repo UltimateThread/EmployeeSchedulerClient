@@ -24,6 +24,22 @@ $(document).ready(function () {
    });
 
    /*------------------------------------------------------------------------------------------*/
+   /* Query the Database to Get All the Events */
+   /*------------------------------------------------------------------------------------------*/
+  //  $.ajax({
+  //       type: "GET",
+  //       dataType: "jsonp",
+  //       url: "http://localhost:60245/api/PullEvents/GetEvents",
+  //       success: function (response) {
+  //           console.log(response);
+  //       },
+  //       error: function (response) {
+  //           console.log('Error');
+  //           console.log(response);
+  //       }
+  //   });
+
+   /*------------------------------------------------------------------------------------------*/
    /* Clear the Employee Events List When the Dialog Closes */
    /*------------------------------------------------------------------------------------------*/
    $('#chooseCorrespondingEventDialog').on('hidden.bs.modal', function () {
